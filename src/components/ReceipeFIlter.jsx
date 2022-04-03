@@ -4,6 +4,8 @@ import MyInput from './UI/input/MyInput';
 import MySelect from './UI/select/MySelect';
 
 const ReceipeFIlter = ({filter, setFilter}) => {
+    console.log("from filter", filter)
+
 
 
 
@@ -20,6 +22,7 @@ const ReceipeFIlter = ({filter, setFilter}) => {
 
             <MySelect
             value={filter.sort}
+            
 
             onChange={selectedSort => setFilter({...filter, sort: selectedSort})}
 

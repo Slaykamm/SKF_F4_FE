@@ -1,12 +1,16 @@
-import React, {useState} from 'react';
-import MyButton from './UI/button/MyButton';
+import React from 'react';
 
-const RecipieItem = (props) => {
-
+const RecipieItem = ({pickOneRecepie, ...props}) => {
 
 
-    return (
-        <div className="recipe">
+    return (    
+        
+        <div 
+            className="recipe"
+            onClick={e => pickOneRecepie(e, props.recipie.id)}
+            style={{cursor:'Pointer'}}
+
+        >
             <div className="recipe__content">
             <strong>{props.number}. Наименование: {props.recipie.title} </strong>
                 <div>
@@ -14,9 +18,7 @@ const RecipieItem = (props) => {
                 </div>
             </div>
             <div className="recipe__btns">
-                <MyButton onClick={() => props.remove(props.recipie)}>
-                    Удалить грязные подробности
-                </MyButton>
+
             </div>
 
             

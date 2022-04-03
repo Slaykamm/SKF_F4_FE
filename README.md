@@ -1,3 +1,14 @@
+# SWAGGER USAGE
+
+// для активации SWAGGER надо активировать строчку внизу. и все будет ок. файл App.js и закоментить строчку выше
+//export default App = () => <SwaggerUI url='http://127.0.0.1:8000/openapi' />
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
